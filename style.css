@@ -1,0 +1,70 @@
+body,
+html {
+	width: 100%;
+	background: rgb(0,255,250);
+	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	font-size: 16px;
+	font-family: sans-serif;
+}
+.person {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.person__info {
+	margin: 32px 32px 32px 0;
+}
+.person__contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.person__details {
+	max-width: 890px;
+}
+.avatar {
+	margin-top: 32px;
+}
+.avatar__picture {
+	border-radius: 50%;
+	border: 32px solid white;
+	width: 400px;
+    height: 400px;
+}
+.contacts {
+	margin: 32px;
+}
+.contacts__name {
+	font-size: 32px;
+	color: #000;
+	font-weight: bold;
+}
+.contacts__role {
+	font-size: 19.2px;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 32px;
+}
+.contacts__item {
+	list-style-type: none;
+	font-style: italic;
+}
+.contacts__title {
+	font-weight: bold;
+}
+.contacts__links {
+	padding: 0;
+}
+.contacts__title:after {
+	content: ": ";
+}
+.contacts__link {
+	color: gray;
+}
+.paragraph {
+	margin-bottom: 16px;
+	
+}
+.paragraph_last {
+	margin-bottom: 48px;
+}
