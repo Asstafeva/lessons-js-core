@@ -41,15 +41,46 @@ html {
 	margin: 32px;
 }
 .contacts__name {
+	width: 15ch;
 	font-size: 32px;
 	color: #000;
 	font-weight: bold;
+	font-family: monospace;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid white;
+	animation: flashing-border 0.75s step-end infinite;
+	animation: printed-text 3s steps(15);
 }
 .contacts__role {
+	width: 27ch;
 	font-size: 19.2px;
 	color: #000;
 	font-weight: bold;
 	margin-bottom: 32px;
+	font-family: monospace;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid white;
+	animation: flashing-border 0.75s step-end infinite;
+	animation: printed-text 3s steps(27);
+	animation-delay: 3s;
+}
+@keyframes flashing-border {
+	0% {
+		border-color: white;
+	}
+	50% {
+		border-color: transparent;
+	}
+	100% {
+		border-color: white;
+	}
+}
+@keyframes printed-text {
+	from {
+		width: 0;
+	}
 }
 .contacts__item {
 	list-style-type: none;
