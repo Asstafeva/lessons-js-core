@@ -1,7 +1,15 @@
+:root {
+	--blue: rgb(0,255,250);
+	--black: #000;
+    --white: #ffffff;
+	--gray: #C0C0C0;
+	--pink: rgb(236, 14, 162);
+}
+
 body,
 html {
 	width: 100%;
-	background: rgb(0,255,250);
+	background: var(--blue);
 	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
 	font-size: 16px;
 	font-family: sans-serif;
@@ -12,7 +20,7 @@ html {
 	justify-content: center;
 }
 .person__info {
-	margin: 32px 32px 32px 0;
+	margin: 2rem 2rem 2rem 0;
 }
 .person__contacts {
 	display: flex;
@@ -23,58 +31,58 @@ html {
 	max-width: 890px;
 }
 .avatar {
-	margin-top: 32px;
+	margin-top: 2rem;
 }
 
 .avatar__picture {
 	border-radius: 50%;
-	border: 32px solid white;
+	border: 32px solid var(--white);
 	width: 400px;
     height: 400px;
 }
 .avatar__picture:hover {
 	transform: rotate(180deg);
 	transition:all 0.5s linear;
-	border: 32px solid rgb(236, 14, 162);
+	border: 32px solid var(--pink);
 }
 .contacts {
-	margin: 32px;
+	margin: 2rem;
 }
 .contacts__name {
 	width: 15ch;
 	font-size: 32px;
-	color: #000;
+	color: var(--black);
 	font-weight: bold;
 	font-family: monospace;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 3px solid white;
+	border-right: 3px solid var(--white);
 	animation: flashing-border 0.75s step-end infinite;
 	animation: printed-text 3s steps(15);
 }
 .contacts__role {
 	width: 27ch;
 	font-size: 19.2px;
-	color: #000;
+	color: var(--black);
 	font-weight: bold;
-	margin-bottom: 32px;
+	margin-bottom: 2rem;
 	font-family: monospace;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 3px solid white;
+	border-right: 3px solid var(--white);
 	animation: flashing-border 0.75s step-end infinite;
 	animation: printed-text 3s steps(27);
 	animation-delay: 3s;
 }
 @keyframes flashing-border {
 	0% {
-		border-color: white;
+		border-color: var(--white);
 	}
 	50% {
 		border-color: transparent;
 	}
 	100% {
-		border-color: white;
+		border-color: var(--white);
 	}
 }
 @keyframes printed-text {
@@ -96,12 +104,12 @@ html {
 	content: ": ";
 }
 .contacts__link {
-	color: gray;
+	color: var(--gray);
 }
 .paragraph {
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 	
 }
 .paragraph_last {
-	margin-bottom: 48px;
+	margin-bottom: 3rem;
 }
